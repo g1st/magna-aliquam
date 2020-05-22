@@ -3,6 +3,12 @@ html {
   margin: 0;
   padding: 0;
 }
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  font-size: 18px;
+}
 body {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
