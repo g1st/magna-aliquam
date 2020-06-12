@@ -60,7 +60,7 @@ nav {
   height: 100%;
 }
 
-ul {
+.menu {
   display: flex;
   width: 20%;
   list-style: none;
