@@ -1,63 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="javascript/index.js"></script>
     <title>Magna aliquam</title>
   </head>
   <body>
-    <header>
-        <nav>
-            <div class="title">
-                <h1><a href="/index.html">HTML5 Website <span>by Html5webtemplates.co.uk</span></a></h1>
-            </div>
-            <ul>
-                <li><a id="links" href="#">Home</a></li>
-                <li><a id="links" href="#">Layouts</a></li>
-                <li><a id="links" href="#">Elements</a></li>
-            </ul>
-        </nav></header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h2 class="hero-heading">Magna Aliquam</h2>
-          <p class="hero-paragraph">
-            Sed lorem ipsum sed dolor nullam adipiscing
-          </p>
-          <a href="#" class="hero-button">Read More</a>
+    <header class="header">
+      <nav>
+        <div class="title">
+          <h1>
+            <a href="/index.html"
+              >HTML5 Website <span>by Html5webtemplates.co.uk</span></a
+            >
+          </h1>
         </div>
+        <ul>
+          <li><a id="links" href="#">Home</a></li>
+          <li><a id="links" href="#">Layouts</a></li>
+          <li><a id="links" href="#">Elements</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <h1 class="hero-header">
+          <span class="hero-header--primary">Magna Aliquam</span>
+          <span class="hero-header--secondary">
+            Sed lorem ipsum sed dolor nullam adipiscing
+          </span>
+          <a href="#" class="hero-button">Learn More</a>
+        </h1>
       </section>
+    </header>
+
+    <main>
       <section class="carousel-section">
         <div class="carousel-section-container">
           <h2>Lorem ipsum dolor</h2>
-          <p>Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor placerat
-            sed amet accumsan enim lorem sem turpis ut. Massa amet erat accumsan curae
-            blandit porttitor faucibus in nisl nisi volutpat massa mi non nascetur.
+          <p>
+            Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor
+            placerat sed amet accumsan enim lorem sem turpis ut. Massa amet erat
+            accumsan curae blandit porttitor faucibus in nisl nisi volutpat
+            massa mi non nascetur.
           </p>
-            <div class="carousel-wrapper">
-              <span class="prev">
-                <i class="fa fa-1x fa-chevron-left chevron-icon"></i>
-              </span>
-              <div class="carousel">
-                <img class="carousel-image visible" src="/img/slider_image1.jpg" alt="">
-                <img class="carousel-image" src="/img/slider_image2.jpg" alt="">
-                <img class="carousel-image" src="/img/slider_image3.jpg" alt="">
-                <img class="carousel-image" src="/img/slider_image4.jpg" alt="">
-              </div>
-              <span class="next">
-                <i class="fa fa-1x fa-chevron-right chevron-icon"></i>
-              </span>
+          <div class="carousel-wrapper">
+            <span class="prev">
+              <i class="fa fa-1x fa-chevron-left chevron-icon"></i>
+            </span>
+            <div class="carousel">
+              <img
+                class="carousel-image visible"
+                src="/img/slider_image1.jpg"
+                alt=""
+              />
+              <img class="carousel-image" src="/img/slider_image2.jpg" alt="" />
+              <img class="carousel-image" src="/img/slider_image3.jpg" alt="" />
+              <img class="carousel-image" src="/img/slider_image4.jpg" alt="" />
             </div>
+            <span class="next">
+              <i class="fa fa-1x fa-chevron-right chevron-icon"></i>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles-intro">
+          <h2>Lorem ipsum dolor</h2>
+          <p>
+            Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor
+            placerat sed amet accumsan enim lorem sem turpis ut. Massa amet erat
+            accumsan curae blandit porttitor faucibus in nisl nisi volutpat
+            massa mi non nascetur.
+          </p>
+        </div>
+        <div class="articles-container">
+          <article class="article">
+            <a href="#"
+              ><img src="https://placeimg.com/341/153/nature" alt=""
+            /></a>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              rem illum eveniet, molestiae suscipit labore.
+            </p>
+            <a href="article-button">Learn More</a>
+          </article>
+          <article class="article">
+            <a href="#"
+              ><img src="https://placeimg.com/341/153/animals" alt=""
+            /></a>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              rem illum eveniet, molestiae suscipit labore.
+            </p>
+            <a href="#" class="article-button">Learn More</a>
+          </article>
+          <article class="article">
+            <a href="#"
+              ><img src="https://placeimg.com/341/153/people" alt=""
+            /></a>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              rem illum eveniet, molestiae suscipit labore.
+            </p>
+            <a href="#" class="article-button">Learn More</a>
+          </article>
+          <article class="article">
+            <a href="#"
+              ><img src="https://placeimg.com/341/153/tech" alt=""
+            /></a>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              rem illum eveniet, molestiae suscipit labore.
+            </p>
+            <a href="#" class="article-button">Learn More</a>
+          </article>
+          <article class="article">
+            <a href="#"
+              ><img src="https://placeimg.com/341/153/architecture" alt=""
+            /></a>
+            <h3>Lorem ipsum dolor sit.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              rem illum eveniet, molestiae suscipit labore.
+            </p>
+            <a href="#" class="article-button">Learn More</a>
+          </article>
+          <article class="article">
+            <a href="#"
+              ><img src="https://placeimg.com/341/153/tech/sepia" alt=""
+            /></a>
+            <h3>Amet nisl consequat</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              rem illum eveniet, molestiae suscipit labore.
+            </p>
+            <a href="#" class="article-button">Learn More</a>
+          </article>
         </div>
       </section>
     </main>
     <footer></footer>
   </body>
 </html>
-

@@ -6,16 +6,61 @@ html {
 }
 body {
   font-family: "Lato", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
+/* Hero Section */
+.header {
+  height: 95vh;
+  background: url(../img/smoke.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-header {
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+
+.hero-header--primary {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  margin: 0 0 0.5em 0;
+}
+.hero-header--secondary {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.74;
+
+  /*
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+  */
+}
+/* .hero-paragraph {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.74;
+  animation: moveInRight 1s ease-out;
+} */
+
+/* .hero {
   background: url(../img/smoke.jpg);
   background-size: cover;
   height: 100vh;
@@ -37,17 +82,22 @@ body {
 .hero-paragraph {
   font-size: 2rem;
   font-weight: 300;
-}
+} */
 .hero-button {
   display: inline-block;
-  background: whitesmoke;
-  color: #333;
+  background: transparent;
+  color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 1.5rem 3rem;
+  border: solid 0.1rem;
   cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 8px;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 3.5rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .hero-button:hover {
   background: #777777;
@@ -106,7 +156,8 @@ body {
   display: block;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -129,6 +180,55 @@ body {
 
 /*=====  End of Carousel section  ======*/
 
+/*=============================================
+=            Begin Article section            =
+=============================================*/
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.8rem;
+  background: #f2f2f2;
+}
+.articles-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.8rem;
+  background: #f2f2f2;
+  margin: 0 1.8rem;
+}
+.articles-intro > h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #545454;
+}
+.articles-intro > p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto 4rem auto;
+  color: #949494;
+  max-width: 900px;
+}
+.article {
+  flex: 0 1 33%;
+  text-align: center;
+  padding: 0.5rem;
+}
+/*=============================================
+=            End of Article section            =
+=============================================*/
 
 /*=============================================
 =            Media queries            =
@@ -136,9 +236,8 @@ body {
 
 /* Mobile Landscape */
 @media screen and (min-width: 480px) {
-
   /*----------  Carousel styles  ----------*/
-  
+
   .carousel-section-container {
     max-width: 90%;
     margin: 0 auto;
@@ -163,7 +262,6 @@ body {
 
 /* Tablet */
 @media screen and (min-width: 736px) {
-
   /*----------  Carousel styles  ----------*/
 
   .carousel-section {
@@ -190,7 +288,6 @@ body {
 
 /* Tablet landscape */
 @media screen and (min-width: 980px) {
-
   /*----------  Carousel styles  ----------*/
 
   .carousel-section-container {
@@ -211,7 +308,8 @@ body {
     color: lightgrey;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     background: #fff;
     padding: 0;
     width: 6rem;
@@ -225,7 +323,6 @@ body {
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-
   /*----------  Carousel styles  ----------*/
 
   .carousel-image {
