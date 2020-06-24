@@ -127,8 +127,13 @@ body {
   color: #fff;
 }
 
-/*=====  End of Carousel section  ======*/
 
+
+/*=====  End of Carousel section  ======*/
+.card {
+  border: 1px solid red;
+  
+}
 
 /*=============================================
 =            Media queries            =
