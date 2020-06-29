@@ -26,50 +26,118 @@ body {
 =            Header section            =
 =============================================*/
 
-header {
-  height: 48px;
-  width: 100%;
-  background-color: #2e1d02;
+
+/*----------  Hamburger button  ----------*/
+
+.hamburger {
+  color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.6rem;
+  height: 6.4rem;
+  z-index: 1;
 }
 
-h1>.nav-link {
-  font-weight: 600;
+.hamburger:hover {
+  cursor: pointer;
 }
 
-.nav-link {
-  color: white;
-  font-size: 1.2rem;
-  list-style: none;
-  text-decoration: none;
-  font-weight: 100;
+.stripes-container {
+  height: 3.6rem;
+  width: 5.4rem;
+  background: rgba(100, 100, 100, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
-.nav-link:hover {
-  color: #ce3d3d;
+.stripe {
+  width: 1.4rem;
+  height: 0.2rem;
+  background: #fff;
+  margin-bottom: 0.3rem;
+  border-radius: 3px;
 }
 
-.title .nav-link>span {
-  font-weight: 300;
-}
+/*----------  End of hamburger button  ----------*/
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 20px;
+  position: fixed;
   height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: width 0.2s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 0 4rem 0 rgba(100, 100, 100, 0.15);
+}
+
+.show-nav {
+  width: 250px;
+}
+
+.title {
+  display: none;
 }
 
 .menu {
-  display: flex;
-  width: 20%;
   list-style: none;
-  justify-content: space-evenly;
+  margin: 0;
+  padding: 0 2.6rem;
+  width: 250px;
 }
 
-.title>h1 {
-  font-size: 1rem;
+.menu>li:last-child .nav-link {
+  border: none;
 }
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #545454;
+  font-weight: 600;
+  line-height: 4.8rem;
+  display: block;
+  border-bottom: solid #e9e9e9 1px;
+}
+
+.icon-down {
+  display: none;
+}
+
+.sub-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-menu>li>.sub-link {
+  padding-left: 2rem;
+}
+
+.sub-menu-inner>li>.sub-link {
+  padding-left: 4rem;
+}
+
+.sub-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #545454;
+  line-height: 4.8rem;
+  display: block;
+  border-bottom: solid #e9e9e9 1px;
+  font-weight: 100;
+}
+
+.nav-link-not-clicable {
+  cursor: auto;
+}
+
+
 /*=====  End of Header section  ======*/
 
 .hero {
@@ -195,7 +263,7 @@ nav {
 @media screen and (min-width: 480px) {
 
   /*----------  Carousel styles  ----------*/
-  
+
   .carousel-section-container {
     max-width: 90%;
     margin: 0 auto;
@@ -248,6 +316,111 @@ nav {
 /* Tablet landscape */
 @media screen and (min-width: 980px) {
 
+  /*----------  Header Styles  ----------*/
+
+  .hamburger {
+    display: none;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  .opaque {
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+    animation: reveal-header .3s forwards;
+  }
+
+  @keyframes reveal-header {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 4.4rem;
+    }
+  }
+
+  .opaque .nav-link {
+    color: #949494;
+  }
+
+  nav {
+    width: 100%;
+    height: 4.4rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    padding: 0 2rem;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 1.467rem;
+    display: block;
+  }
+
+  .title>.nav-link {
+    font-weight: 600;
+  }
+
+  .nav-link>span {
+    font-weight: 300;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    width: 23rem;
+    transition: none;
+  }
+
+  .menu {
+    width: 23rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.467rem;
+  }
+
+  .nav-link {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    transition: color .1s linear;
+    border: none;
+    font-size: 1.467rem;
+  }
+
+  .nav-link:hover {
+    color: #ce3d3d;
+  }
+
+  .icon-down {
+    margin-right: 0.8rem;
+    display: inline;
+  }
+
+  .nav-link-not-clicable {
+    cursor: pointer;
+  }
+
   /*----------  Carousel styles  ----------*/
 
   .carousel-section-container {
@@ -283,6 +456,39 @@ nav {
 /* Desktop */
 @media screen and (min-width: 1280px) {
 
+  /*----------  Header styles  ----------*/
+
+  nav {
+    height: 4.8rem;
+    width: 25rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .menu {
+    width: 25rem;
+  }
+
+  .nav-link {
+    font-size: 1.6rem;
+  }
+
+  .icon-down {
+    margin-right: 1rem;
+  }
+
+  @keyframes reveal-header {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 4.8rem;
+    }
+  }
+
   /*----------  Carousel styles  ----------*/
 
   .carousel-image {
@@ -297,6 +503,43 @@ nav {
   .next {
     right: -12rem;
   }
+}
+
+@media screen and (min-width: 1680px) {
+
+  /*----------  Header styles  ----------*/
+
+  nav {
+    height: 6rem;
+    width: 34rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .menu {
+    width: 34rem;
+  }
+
+  .nav-link {
+    font-size: 2rem;
+  }
+
+  .icon-down {
+    margin-right: 1.6rem;
+  }
+
+  @keyframes reveal-header {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 6rem;
+    }
+  }
+
 }
 
 /*=====  End of Media queries  ======*/

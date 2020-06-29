@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="javascript/index.js"></script>
-    <title>Magna aliquam</title>
-  </head>
-  <body>
-    <header>
-        <nav>
-            <div class="title">
-                <h1><a class="nav-link" href="/index.html">HTML5 Website <span>by Html5webtemplates.co.uk</span></a></h1>
-            </div>
-            <ul class="menu">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">Layouts</a></li>
-                <li><a class="nav-link" href="#">Elements</a></li>
-            </ul>
-        </nav></header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h2 class="hero-heading">Magna Aliquam</h2>
-          <p class="hero-paragraph">
-            Sed lorem ipsum sed dolor nullam adipiscing
-          </p>
-          <a href="#" class="hero-button">Read More</a>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="javascript/index.js"></script>
+  <title>Magna aliquam</title>
+</head>
+<body>
+  <header>
+    <div class="hamburger">
+      <div class="stripes-container">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+      </div>
+    </div>
+    <h1 class="title">
+      <a class="nav-link" href="/index.html">HTML5 Website <span>by
+          Html5webtemplates.co.uk</span></a>
+    </h1>
+    <nav>
+      <ul class="menu">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link nav-link-not-clicable" href="#"><i
+              class="fa fa-angle-down icon-down"></i>Layouts</a>
+          <ul class="sub-menu">
+            <li><a href="#" class="sub-link">Left Sidebar</a></li>
+            <li><a href="#" class="sub-link">Right Sidebar</a></li>
+            <li><a href="#" class="sub-link">No Sidebar</a></li>
+            <li><a href="#" class="sub-link nav-link-not-clicable">Submenu</a>
+              <ul class="sub-menu sub-menu-inner">
+                <li><a href="#" class="sub-link">Option 1</a></li>
+                <li><a href="#" class="sub-link">Option 2</a></li>
+                <li><a href="#" class="sub-link">Option 3</a></li>
+                <li><a href="#" class="sub-link">Option 4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="#">Elements</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-heading">Magna Aliquam</h2>
+        <p class="hero-paragraph">
+          Sed lorem ipsum sed dolor nullam adipiscing
+        </p>
+        <a href="#" class="hero-button">Read More</a>
+      </div>
+    </section>
+    <section class="carousel-section">
+      <div class="carousel-section-container">
+        <h2>Lorem ipsum dolor</h2>
+        <p>Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor placerat
+          sed amet accumsan enim lorem sem turpis ut. Massa amet erat accumsan curae
+          blandit porttitor faucibus in nisl nisi volutpat massa mi non nascetur.
+        </p>
+        <div class="carousel-wrapper">
+          <span class="prev">
+            <i class="fa fa-1x fa-chevron-left chevron-icon"></i>
+          </span>
+          <div class="carousel">
+            <img class="carousel-image visible" src="/img/slider_image1.jpg" alt="">
+            <img class="carousel-image" src="/img/slider_image2.jpg" alt="">
+            <img class="carousel-image" src="/img/slider_image3.jpg" alt="">
+            <img class="carousel-image" src="/img/slider_image4.jpg" alt="">
+          </div>
+          <span class="next">
+            <i class="fa fa-1x fa-chevron-right chevron-icon"></i>
+          </span>
         </div>
-      </section>
-      <section class="carousel-section">
-        <div class="carousel-section-container">
-          <h2>Lorem ipsum dolor</h2>
-          <p>Ipsum dolor tempus commodo turpis adipiscing adipiscing in tempor placerat
-            sed amet accumsan enim lorem sem turpis ut. Massa amet erat accumsan curae
-            blandit porttitor faucibus in nisl nisi volutpat massa mi non nascetur.
-          </p>
-            <div class="carousel-wrapper">
-              <span class="prev">
-                <i class="fa fa-1x fa-chevron-left chevron-icon"></i>
-              </span>
-              <div class="carousel">
-                <img class="carousel-image visible" src="/img/slider_image1.jpg" alt="">
-                <img class="carousel-image" src="/img/slider_image2.jpg" alt="">
-                <img class="carousel-image" src="/img/slider_image3.jpg" alt="">
-                <img class="carousel-image" src="/img/slider_image4.jpg" alt="">
-              </div>
-              <span class="next">
-                <i class="fa fa-1x fa-chevron-right chevron-icon"></i>
-              </span>
-            </div>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
 </html>
 
