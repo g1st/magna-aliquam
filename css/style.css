@@ -451,6 +451,20 @@ nav {
     justify-content: center;
     align-items: center;
   }
+
+  /*----------  Features  ----------*/
+  .features-container {
+    max-width: 1200px;
+  }
+
+  .features-item {
+    max-width: 30%;
+    display: flex;
+  }
+
+  .features-info-wrapper {
+    text-align: left;
+  }
 }
 
 /* Desktop */
