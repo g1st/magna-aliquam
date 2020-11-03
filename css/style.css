@@ -255,6 +255,88 @@ nav {
 /*=====  End of Carousel section  ======*/
 
 
+
+/*=============================================
+=            Blog section            =
+=============================================*/
+
+.blog {
+  background-color: #f2f2f2;
+  padding-top: 5rem;
+}
+
+.blog-container {
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+}
+
+.blog-info {
+  color: #949494;
+  margin: 2rem auto 0 auto;
+  line-height: 1.6;
+  width: 80%;
+  max-width: 600px;
+}
+
+.blog-posts {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  max-width: 360px;
+  margin: 0 auto 4rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog-post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-post-info {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.blog-post-title {
+  font-weight: 600;
+  color: #444444;
+}
+
+.blog-post-description {
+  color: #949494;
+  line-height: 1.6;
+  margin-top: 3rem;
+}
+
+.blog-post-button {
+  background-color: transparent;
+  margin: 3rem 0 1rem 0;
+  padding: 0.75em 1.1em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  color: #545454;
+  transition: 0.15s background-color ease-in;
+}
+
+.blog-post-button:hover,
+.blog-post-button:active {
+  background-color: #f2f2f2;
+}
+
+/*=====  End of Blog section  ======*/
+
 /*=============================================
 =            Media queries            =
 =============================================*/
