@@ -140,8 +140,10 @@ nav {
 .hero {
   background: url(../img/smoke.jpg);
   background-size: cover;
-  height: 100vh;
   color: #fff;
+  height: 260px;
+  display: flex;
+  justify-content: center;
 }
 .hero .container {
   display: flex;
@@ -149,30 +151,38 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  padding: 0 3rem;
 }
 .hero-heading {
-  font-size: 4rem;
-  font-weight: 400;
-  margin-top: 12rem;
+  font-size: 3.5rem;
+  font-weight: 600;
   margin-bottom: 0;
 }
 .hero-paragraph {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 300;
+  margin-top: 2rem;
+  text-align: center;
 }
 .hero-button {
   display: inline-block;
-  background: whitesmoke;
-  color: #333;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  margin-top: 1.25rem;
+  text-align: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 1em 2em;
+  border: 1px solid #fff;
   cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.15s background-color ease-in;
 }
 .hero-button:hover {
-  background: #777777;
+  background-color: #777777;
   color: #fff;
 }
 
@@ -520,6 +530,25 @@ nav {
 
 /* Mobile Landscape */
 @media screen and (min-width: 480px) {
+  /*----------  Hero section  ----------*/
+
+  .hero-button {
+    width: auto;
+  }
+
+  .hero-heading {
+    margin-top: 0;
+  }
+
+  .hero-paragraph {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .hero-button {
+    margin-top: 2rem;
+  }
+
   /*----------  Carousel styles  ----------*/
 
   .carousel-section-container {
@@ -562,6 +591,20 @@ nav {
 
 /* Tablet */
 @media screen and (min-width: 736px) {
+  /*----------  Hero section  ----------*/
+  .hero {
+    height: 610px;
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+  }
+
+  .hero-button {
+    font-size: 1.5rem;
+    padding: 1em 2.25em;
+  }
+
   /*----------  Carousel styles  ----------*/
 
   .carousel-section {
@@ -741,6 +784,11 @@ nav {
     cursor: pointer;
   }
 
+  /*----------  Hero section  ----------*/
+  .hero {
+    height: 500px;
+  }
+
   /*----------  Carousel styles  ----------*/
 
   .carousel-section-container {
@@ -826,6 +874,11 @@ nav {
     to {
       height: 4.8rem;
     }
+  }
+
+  /*----------  Hero section  ----------*/
+  .hero {
+    height: 610px;
   }
 
   /*----------  Carousel styles  ----------*/
