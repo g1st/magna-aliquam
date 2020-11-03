@@ -1,4 +1,3 @@
-
 /*=============================================
 =            Universal styles            =
 =============================================*/
@@ -10,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6em;
 }
 
@@ -25,7 +24,6 @@ body {
 /*=============================================
 =            Header section            =
 =============================================*/
-
 
 /*----------  Hamburger button  ----------*/
 
@@ -91,7 +89,7 @@ nav {
   width: 250px;
 }
 
-.menu>li:last-child .nav-link {
+.menu > li:last-child .nav-link {
   border: none;
 }
 
@@ -115,11 +113,11 @@ nav {
   list-style: none;
 }
 
-.sub-menu>li>.sub-link {
+.sub-menu > li > .sub-link {
   padding-left: 2rem;
 }
 
-.sub-menu-inner>li>.sub-link {
+.sub-menu-inner > li > .sub-link {
   padding-left: 4rem;
 }
 
@@ -136,7 +134,6 @@ nav {
 .nav-link-not-clicable {
   cursor: auto;
 }
-
 
 /*=====  End of Header section  ======*/
 
@@ -231,7 +228,8 @@ nav {
   display: block;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -254,7 +252,50 @@ nav {
 
 /*=====  End of Carousel section  ======*/
 
+/*=============================================
+=            Features            =
+=============================================*/
+.features {
+  margin-top: 5rem;
+}
 
+.features-container {
+  margin: 0 auto;
+  max-width: 84%;
+}
+
+.features-item {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.features-icon-wrapper {
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.features-icon {
+  color: rgb(219, 72, 72);
+  border: 1px solid lightgrey;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.features-info-wrapper {
+  margin: 1rem;
+}
+
+.features-title {
+  font-weight: 600;
+  color: #545454;
+  margin-bottom: 1rem;
+}
+
+.features-text {
+  color: #949494;
+  line-height: 1.7;
+}
+
+/*=====  End of Features  ======*/
 
 /*=============================================
 =            Blog section            =
@@ -338,12 +379,48 @@ nav {
 /*=====  End of Blog section  ======*/
 
 /*=============================================
+=            Get started section            =
+=============================================*/
+
+.get-started {
+  background-color: #e0555a;
+}
+
+.get-started-container {
+  padding: 0 3rem 2.5em 3em;
+}
+
+.get-started-title {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 2rem 0;
+  padding-top: 2.5rem;
+  font-size: 2.25rem;
+}
+
+.get-started-button {
+  color: #fff;
+  background-color: transparent;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1em 2em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: 0.15 background-color ease-in;
+}
+
+.get-started-button:hover,
+.get-started-button:active {
+  background-color: #df5a5f;
+}
+/*=====  End of Get started section  ======*/
+
+/*=============================================
 =            Media queries            =
 =============================================*/
 
 /* Mobile Landscape */
 @media screen and (min-width: 480px) {
-
   /*----------  Carousel styles  ----------*/
 
   .carousel-section-container {
@@ -366,11 +443,26 @@ nav {
   .chevron-icon {
     font-size: 2.4rem;
   }
+
+  /*----------  Get started  ----------*/
+  .get-started-container {
+    display: flex;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .get-started-title {
+    margin-right: 3rem;
+  }
+
+  .get-started-button {
+    width: auto;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 736px) {
-
   /*----------  Carousel styles  ----------*/
 
   .carousel-section {
@@ -393,11 +485,21 @@ nav {
   .chevron-icon {
     font-size: 3rem;
   }
+
+  /*----------  Features  ----------*/
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .features-item {
+    max-width: 40%;
+  }
 }
 
 /* Tablet landscape */
 @media screen and (min-width: 980px) {
-
   /*----------  Header Styles  ----------*/
 
   .hamburger {
@@ -411,7 +513,7 @@ nav {
   .opaque {
     background: #fff;
     border-bottom: 1px solid #e9e9e9;
-    animation: reveal-header .3s forwards;
+    animation: reveal-header 0.3s forwards;
   }
 
   @keyframes reveal-header {
@@ -455,11 +557,11 @@ nav {
     display: block;
   }
 
-  .title>.nav-link {
+  .title > .nav-link {
     font-weight: 600;
   }
 
-  .nav-link>span {
+  .nav-link > span {
     font-weight: 300;
   }
 
@@ -485,7 +587,7 @@ nav {
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: color .1s linear;
+    transition: color 0.1s linear;
     border: none;
     font-size: 1.467rem;
   }
@@ -523,7 +625,8 @@ nav {
     color: lightgrey;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     background: #fff;
     padding: 0;
     width: 6rem;
@@ -551,7 +654,6 @@ nav {
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
-
   /*----------  Header styles  ----------*/
 
   nav {
@@ -602,7 +704,6 @@ nav {
 }
 
 @media screen and (min-width: 1680px) {
-
   /*----------  Header styles  ----------*/
 
   nav {
@@ -635,7 +736,6 @@ nav {
       height: 6rem;
     }
   }
-
 }
 
 /*=====  End of Media queries  ======*/
