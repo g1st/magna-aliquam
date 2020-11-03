@@ -315,6 +315,8 @@ nav {
 
 .blog-title {
   font-size: 2.5rem;
+  color: #545454;
+  font-weight: 600;
 }
 
 .blog-info {
@@ -594,6 +596,30 @@ nav {
     max-width: 40%;
   }
 
+  /*----------  Blog  ----------*/
+
+  .blog-container {
+    padding-bottom: 3rem;
+  }
+
+  .blog-info {
+    font-size: 1.75rem;
+  }
+
+  .blog-posts {
+    padding-top: 1rem;
+  }
+
+  .blog-title {
+    font-size: 3rem;
+  }
+
+  /*----------  Get started  ----------*/
+
+  .get-started-container {
+    padding: 5rem 0;
+  }
+
   /*----------  Footer  ----------*/
 
   .footer-container {
@@ -748,6 +774,11 @@ nav {
   }
 
   /*----------  Features  ----------*/
+  .features {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+  }
+
   .features-container {
     max-width: 1200px;
   }
