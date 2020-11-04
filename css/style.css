@@ -260,7 +260,6 @@ nav {
   color: #fff;
 }
 
-/*=====  End of Carousel section  ======*/
 
 /*=============================================
 =            Features            =
@@ -523,6 +522,21 @@ nav {
 }
 
 /*=====  End of Footer  ======*/
+
+/*=====  End of Carousel section  ======*/
+div {
+  display: block;
+}
+.card {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  
+}
 
 /*=============================================
 =            Media queries            =
